@@ -1,0 +1,1198 @@
+@font-face {
+  font-family: mainfont;
+  src: url(/font/Poppins-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: mainfont, 'sans-serif';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  background-color: #101a1f;
+}
+
+body hr {
+  border-color: #273f4b;
+}
+
+body h2 span {
+  color: red;
+}
+
+body .hero {
+  width: 100%;
+  padding: 2% 8%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .hero nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .hero nav .logo {
+  font-size: 3em;
+  margin: 1rem 0;
+}
+
+body .hero .content {
+  margin: 2% 0;
+}
+
+body .hero .content h1 {
+  font-size: 3em;
+  margin: 2% 0;
+}
+
+body .hero .content h1 span {
+  color: red;
+}
+
+body .hero .content h3 {
+  margin: 2% 0;
+}
+
+body .hero .content p {
+  margin: 4% 0;
+}
+
+body .hero .content .newslatter {
+  margin: 2rem 0;
+}
+
+body .hero .content .newslatter form {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+body .hero .content .newslatter form input:first-child {
+  display: inline;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 1px solid red;
+  border-radius: 30px;
+}
+
+body .hero .content .newslatter form input:last-child {
+  -webkit-box-shadow: 0 0 5px #000, 0 0 15px #858585;
+          box-shadow: 0 0 5px #000, 0 0 15px #858585;
+  position: absolute;
+  display: inline-block;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: red;
+  top: 5px;
+  right: 8px;
+}
+
+body .hero .content .newslatter form input:last-child:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .hero .social {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem auto;
+  font-size: 2em;
+}
+
+body .hero .social a {
+  background-color: #152229;
+  padding: .5rem 1rem;
+  border-radius: 50%;
+}
+
+body .hero .social a i:hover {
+  color: red;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .hero .mypic {
+  width: 100%;
+}
+
+body .hero .mypic img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+body .hero .mypic img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #theme {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+body #checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+body #checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+body .label {
+  background-color: #152229;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  /*transform: scale(1.5);*/
+}
+
+body .label .fa-moon {
+  color: #f1c40f;
+}
+
+body .label .fa-sun {
+  color: #f39c12;
+}
+
+body .label .ball {
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+@media screen and (min-width: 412px) {
+  body nav ul, body nav .subscribe {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body .hero .content {
+    width: 700px;
+    margin-top: auto;
+  }
+  body .hero .content .newslatter form {
+    width: 100%;
+  }
+  body .hero .social {
+    width: 50vw;
+  }
+  body .hero .mypic {
+    width: 700px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body body {
+    background-color: #101a1f;
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 1920px;
+  }
+  body body .hero {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  body body hr {
+    width: 85%;
+    margin: 0 auto;
+    border-color: #273f4b;
+  }
+  body body .logo {
+    font-size: 2em;
+    cursor: pointer;
+  }
+  body body .logo span {
+    color: red;
+  }
+  body body #theme {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  body body #checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  body body #checkbox:checked + .label .ball {
+    -webkit-transform: translateX(24px);
+            transform: translateX(24px);
+  }
+  body body .label {
+    background-color: #152229;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    /*transform: scale(1.5);*/
+  }
+  body body .label .fa-moon {
+    color: #f1c40f;
+  }
+  body body .label .fa-sun {
+    color: #f39c12;
+  }
+  body body .label .ball {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+  body body nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2% 8% 1% 8%;
+  }
+  body body nav ul {
+    width: 50%;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body body nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body body nav ul li a {
+    padding: .2rem;
+    border-bottom: 1px solid transparent;
+  }
+  body body nav ul li a:hover {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body nav .subscribe {
+    border-radius: 50px;
+    border: 1px solid red;
+    background-color: red;
+    padding: .7rem 1.5rem;
+  }
+  body body nav .subscribe:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body .content {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  body body .shape {
+    height: 88%;
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    background-color: red;
+    -webkit-clip-path: polygon(61% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+            clip-path: polygon(61% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+  }
+  body body .shape2 {
+    background: red;
+    width: 39%;
+    height: 89%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    -webkit-clip-path: polygon(45% 0, 0 0, 0 52%, 0 100%, 100% 100%);
+            clip-path: polygon(45% 0, 0 0, 0 52%, 0 100%, 100% 100%);
+  }
+  body body .mypic2 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    height: 70%;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #101a1f;
+  }
+  body body .mypic2 img {
+    position: relative;
+    width: 500px;
+    height: 95%;
+    left: 3%;
+    margin: auto;
+  }
+  body body .somenote {
+    width: 80%;
+    padding-bottom: 2rem;
+  }
+  body body h1 {
+    margin: 2% 0 2%;
+    font-size: 3em;
+  }
+  body body h1 span {
+    color: red;
+  }
+  body body h3 {
+    font-size: 1.5em;
+    margin-bottom: 3%;
+  }
+  body body h4 {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+  }
+  body body .newslatter form {
+    width: 50%;
+    max-width: 100%;
+    position: relative;
+  }
+  body body .newslatter form input:first-child {
+    display: inline;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 1px solid red;
+    border-radius: 30px;
+  }
+  body body .newslatter form input:last-child {
+    -webkit-box-shadow: 0 0 5px #000, 0 0 15px #858585;
+            box-shadow: 0 0 5px #000, 0 0 15px #858585;
+    position: absolute;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: red;
+    top: 5px;
+    right: 8px;
+  }
+  body body .newslatter form input:last-child:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body .social {
+    position: absolute;
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    left: 20%;
+    font-size: 2em;
+    bottom: 10%;
+  }
+  body body .social a {
+    background-color: #152229;
+    padding: .5rem 1rem;
+    border-radius: 50%;
+  }
+  body body .social a i:hover {
+    color: red;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body .mypic {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45%;
+    max-width: 500px;
+    height: 70%;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #101a1f;
+  }
+  body body .mypic img {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+    min-width: 90%;
+    height: 95%;
+    margin: auto;
+  }
+  body body #about {
+    width: 100%;
+    padding: auto;
+  }
+  body body .main {
+    background-color: black;
+    margin: 0 8%;
+    max-width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body body .main .about-text {
+    width: 500px;
+    position: absolute;
+    right: 15%;
+  }
+  body body .main .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  body body .main .about-text h2 span {
+    color: red;
+  }
+  body body .main .about-text h5 {
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  body body .main .about-text h5 span {
+    color: red;
+  }
+  body body .main .about-text p {
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  body body .main button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+    font-size: 18px;
+    padding-right: 1.5rem;
+    border-radius: 30px;
+    border: 1px solid red;
+  }
+  body body .main button a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: red;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+  }
+  body body .main button:hover {
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  body body .title {
+    text-align: center;
+  }
+  body body .title h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  body body .title span {
+    color: red;
+  }
+  body body .title h4 {
+    margin: 1rem;
+  }
+  body body #services {
+    width: 100%;
+    padding: 0 8%;
+  }
+  body body #services .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    min-width: 400px;
+  }
+  body body #services .box .card {
+    padding: 1rem 1.5rem;
+    height: 400px;
+    width: 350px;
+    background-color: #152229;
+    border: 1px solid #273f4b;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+  }
+  body body #services .box .card:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-color: red;
+  }
+  body body #services .box .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: red;
+  }
+  body body #services .box .card h5 {
+    font-size: 22px;
+    margin: 15px;
+    text-align: center;
+  }
+  body body #services .box .card .note p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  body body .slogan {
+    width: 100%;
+    text-align: center;
+  }
+  body body .slogan h4 {
+    font-size: 1.5em;
+  }
+  body body .slogan span {
+    color: red;
+  }
+  body body .button {
+    background-color: transparent;
+    font-size: 18px;
+    padding: .3rem 1.2rem;
+    border-radius: 30px;
+    border: 1px solid red;
+  }
+  body body .button:hover {
+    background-color: red;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body #skills {
+    width: 100%;
+  }
+  body body #skills .skills-progress {
+    width: 100%;
+    margin-bottom: 45px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body body #skills .skills-progress .development, body body #skills .skills-progress .design {
+    width: 45%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar1, body body #skills .skills-progress .design .item .item-text .bar1 {
+    margin-left: 70%;
+  }
+  body body #skills .skills-progress .development .item .progress, body body #skills .skills-progress .design .item .progress {
+    width: 100%;
+    height: 8px;
+    margin: .8rem 0;
+    border-radius: 10px;
+    background-color: #152229;
+    overflow: hidden;
+  }
+  body body #skills .skills-progress .development .item .progress .progress-bar, body body #skills .skills-progress .design .item .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar1, body body #skills .skills-progress .design .item .item-text .bar1 {
+    margin-left: 70%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar1, body body #skills .skills-progress .design .item .progress .bar1 {
+    width: 80%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar2, body body #skills .skills-progress .design .item .item-text .bar2 {
+    margin-left: 50%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar2, body body #skills .skills-progress .design .item .progress .bar2 {
+    width: 60%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar3, body body #skills .skills-progress .design .item .item-text .bar3 {
+    margin-left: 20%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar3, body body #skills .skills-progress .design .item .progress .bar3 {
+    width: 20%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar4, body body #skills .skills-progress .design .item .item-text .bar4 {
+    margin-left: 5%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar4, body body #skills .skills-progress .design .item .progress .bar4 {
+    width: 10%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar5, body body #skills .skills-progress .design .item .item-text .bar5 {
+    margin-left: 1%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar5, body body #skills .skills-progress .design .item .progress .bar5 {
+    width: 20%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar6, body body #skills .skills-progress .design .item .item-text .bar6 {
+    margin-left: 5%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar6, body body #skills .skills-progress .design .item .progress .bar6 {
+    width: 30%;
+  }
+  body body #skills .skills-progress .development .item .item-text .bar7, body body #skills .skills-progress .design .item .item-text .bar7 {
+    margin-left: 1%;
+  }
+  body body #skills .skills-progress .development .item .progress .bar7, body body #skills .skills-progress .design .item .progress .bar7 {
+    width: 10%;
+  }
+  body body .experience {
+    width: 100%;
+    padding: 2% 8%;
+  }
+  body body .experience .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body body .experience .box .card {
+    text-align: center;
+    background-color: #152229;
+    width: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #273f4b;
+  }
+  body body .experience .box .card h2 {
+    font-size: 4rem;
+    color: red;
+  }
+  body body .getintouch {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  body body .getintouch h2 {
+    font-size: 3em;
+    margin-top: 1rem;
+  }
+  body body .getintouch h2 span {
+    color: red;
+  }
+  body body .getintouch h4 {
+    margin: 1rem 0;
+  }
+  body body .contact {
+    width: 100%;
+    padding: 0 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body body .contact .title {
+    width: 45%;
+  }
+  body body .contact .title .details form {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  body body .contact .title .details form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body body .contact .title .details form div i {
+    margin-bottom: 1rem;
+    color: #273f4b;
+  }
+  body body .contact .title .details form input {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #273f4b;
+  }
+  body body .contact .title .details form textarea {
+    background-color: transparent;
+    border: 1px solid #273f4b;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    font-size: 1.1rem;
+  }
+  body body .contact .title .sub-button {
+    width: 18vh;
+    margin: auto;
+    margin-bottom: 45px;
+    margin-top: 20px;
+  }
+  body body .contact .title .sub-button .message-sub {
+    position: relative;
+    border: 1px solid #273f4b;
+    font-size: 20px;
+    background-color: transparent;
+    padding: .5rem 2rem;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  body body .contact .title .sub-button .message-sub:hover {
+    background-color: red;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-color: red;
+  }
+  body body .contact .info {
+    width: 50%;
+  }
+  body body .contact .info .title {
+    margin: auto;
+  }
+  body body .contact .info .detailsinfo {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body body .contact .info .detailsinfo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body body .contact .info .detailsinfo ul li {
+    width: 50%;
+    background-color: #18293177;
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  body body .contact .info .detailsinfo ul li:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  body body .footertitle {
+    width: 100%;
+    background-color: #0d1418;
+    text-align: center;
+    padding: 10px;
+  }
+  body body .footertitle h2 {
+    font-size: 2em;
+  }
+  body body .footertitle h2 span {
+    color: red;
+  }
+  body body .footertitle #social {
+    width: 25%;
+    margin: 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 2em;
+  }
+  body body .footertitle #social a {
+    background-color: #152229;
+    padding: .5rem 1rem;
+    border-radius: 50%;
+  }
+  body body .footertitle #social a i:hover {
+    color: red;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body #hero {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body body #hero .container {
+    width: 400px;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2% 2% 2% 8%;
+    background-color: #152229;
+    border-radius: 20px;
+    padding: 2%;
+  }
+  body body #hero .container .owner .names {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  body body #hero .container .owner .names span {
+    color: red;
+  }
+  body body #hero .container .owner .names .image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  body body #hero .container .somebuttons ul li {
+    margin: 1rem 0;
+  }
+  body body #hero .container .somebuttons ul li a {
+    padding: .2rem 0;
+    color: #426c81;
+  }
+  body body #hero .container .somebuttons ul li a:hover {
+    color: white;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  body body #hero .container .hallmark {
+    margin-top: 5rem;
+    border-radius: 20px;
+  }
+  body body #hero .container .hallmark p {
+    font-style: italic;
+  }
+  body body #hero .maincontainer {
+    width: 100%;
+    overflow: hidden;
+    /*background-color: $background;*/
+    margin-right: 8%;
+    padding: 2%;
+    border-radius: 20px;
+    text-align: start;
+  }
+  body body #hero .maincontainer .title2 h2 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+  body body #hero .maincontainer .title2 span {
+    color: red;
+  }
+  body body #hero .maincontainer .box {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body body #hero .maincontainer .box .card {
+    width: 32%;
+    max-width: 400px;
+    margin-top: 2%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #152229;
+    border-radius: 20px;
+  }
+  body body #hero .maincontainer .box .card h5 {
+    color: #273f4b;
+    margin: 2%;
+  }
+  body body #hero .maincontainer .box .card h4 {
+    margin: 2%;
+    font-size: 1.5em;
+  }
+  body body #hero .maincontainer .box .card p {
+    margin: 2%;
+  }
+  body body #hero .maincontainer .box .card .images {
+    width: 100%;
+    height: 150px;
+    background-image: url("/images/banner-Web-Development.png");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  body body #hero .maincontainer .box .card:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body body #hero .maincontainer .box .card .buttonmore {
+    text-align: end;
+    margin: 5%;
+  }
+  body body #hero .maincontainer .box .card .buttonmore button {
+    background: transparent;
+    border: 1px solid red;
+    padding: .2rem .5rem;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  body body #hero .maincontainer .box .card .buttonmore button:hover {
+    background-color: red;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+  }
+}
+
+body body.light {
+  background-color: white;
+}
+
+body body.light nav h2 {
+  color: #000;
+}
+
+body body.light nav ul a {
+  color: #000;
+}
+
+body body.light .content h4, body body.light .content h1, body body.light .content h3, body body.light .content p {
+  color: #000;
+}
+
+body body.light .content .newslatter #mail {
+  color: #000;
+}
+
+body body.light .mypic, body body.light .mypic2 {
+  background-color: white;
+}
+
+body body.light #about .title h2 {
+  color: #000;
+}
+
+body body.light #about h5, body body.light #about p {
+  color: #000;
+}
+
+body body.light #about button {
+  color: #000;
+}
+
+body body.light #about button:hover {
+  color: white;
+}
+
+body body.light #services h2, body body.light #services h4 {
+  color: #000;
+}
+
+body body.light #services .box .card {
+  background-color: #18293177;
+}
+
+body body.light #services .box .card a {
+  color: #000;
+}
+
+body body.light #services .box .card a:hover {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body body.light #skills h2, body body.light #skills h4, body body.light #skills h5 {
+  color: #000;
+}
+
+body body.light #skills .skills-progress .development .item .item-text span, body body.light #skills .skills-progress .design .item .item-text span {
+  color: #000;
+}
+
+body body.light #skills .skills-progress .development .item .progress, body body.light #skills .skills-progress .design .item .progress {
+  background-color: #18293177;
+}
+
+body body.light #skills .progress {
+  background-color: #18293177;
+}
+
+body body.light .experience .box .card {
+  background-color: #18293177;
+}
+
+body body.light .getintouch h2, body body.light .getintouch h4 {
+  color: #000;
+}
+
+body body.light .contact h2 {
+  color: #000;
+}
+
+body body.light .contact button {
+  color: #000;
+}
+
+body body.light .contact button i {
+  color: inherit;
+}
+
+body body.light .contact button:hover {
+  color: white;
+}
+
+body body.light .detailsinfo ul li {
+  background-color: #18293177;
+}
+
+body body.light .detailsinfo ul li a {
+  color: #000;
+}
+
+body body.light .detailsinfo ul li a i {
+  color: inherit;
+}
+
+body body.light #hero .container {
+  background-color: #18293177;
+}
+
+body body.light #hero .maincontainer .title2 p, body body.light #hero .maincontainer .title2 h2 {
+  color: #000;
+}
+
+body body.light #hero .maincontainer .box .card {
+  background-color: #18293177;
+}
+
+body body.light .footertitle {
+  background-color: #18293177;
+}
+/*# sourceMappingURL=style.css.map */

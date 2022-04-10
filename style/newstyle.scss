@@ -1,0 +1,1387 @@
+$downloadbtn : red;
+$spancolor: red;
+$linecolor: #273f4b;
+$background: #152229;
+$mainbackground:#101a1f;
+$blockbackgroung:#142025;
+$mainbackgroundlight:white;
+$footercolor:#0d1418;
+$whitebackgroung:#18293177;
+$gray:rgb(122, 122, 122);
+$black: #000;
+$white:#fff;
+
+@font-face {
+    font-family: mainfont;
+    src: url(/font/Poppins-Regular.ttf);
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+@mixin boxshadaw {
+    box-shadow: 0 0 5px #000, 0 0 15px #858585;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: mainfont, 'sans-serif';
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    outline: none;
+    list-style: none;
+}
+body.light{
+    background-color: $mainbackgroundlight;
+    nav{
+        h2{
+            color: $black;
+        }
+        ul{
+            a{
+                color: $black;
+            }
+        }
+    }
+    
+    .content{
+        h4, h1, h3, p{
+            color: $black;
+        }
+        .newslatter{
+            #mail{
+                color: $black;
+            }
+        }
+    }
+    .hero{
+        .mypic, .mypic2{
+            background-color: $mainbackgroundlight;
+        }
+    }
+    #about{
+        .title{
+            h2{
+                color: $black;
+            }
+        }
+        .main{
+            .mypic2{
+                background-color: $white;
+            }
+        }
+        h5, p{
+            color: $black;
+        }
+
+        button{
+            color: $black;
+            &:hover{
+                color: $mainbackgroundlight;
+            }
+        }
+    }
+    #services{
+        h2, h4{
+            color: $black;
+        }
+        .box{
+            .card{
+                background-color: $whitebackgroung;
+                a{
+                    /*color: $black;*/
+                    &:hover{
+                        color: $mainbackgroundlight;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+
+    #skills{
+        h2, h4, h5{
+            color: $black;
+        }
+        .skills-progress{
+            .development, .design{
+                .item{
+                    .item-text{
+                        span{
+                            color: $black;
+                        }
+                    }
+
+                    .progress{
+                        background-color: $whitebackgroung;
+                    }
+                }
+            }
+        }
+
+        .progress{
+            background-color: $whitebackgroung;
+        }
+    }
+    .experience{
+        .box{
+            .card{
+                background-color: $whitebackgroung;
+            }
+        }
+    }
+
+    .getintouch{
+        h2, h4{
+            color: $black;
+        }
+    }
+    .contact{
+        h2{
+            color: $black;
+        }
+        button{
+            color: $black;
+            i{
+                color: inherit;
+            }
+            &:hover{
+                color: $mainbackgroundlight;
+            }
+        }
+    }
+
+    .detailsinfo{
+        ul{
+            li{
+                background-color: #18293177;
+                a{
+                    color: $black;
+                    i{
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+    #hero{
+        .container{
+            background-color: $whitebackgroung;
+        }
+        .maincontainer{
+            .title2{
+                p, h2{
+                    color: $black;
+                }
+            }
+            .box{
+                .card{
+                    background-color: $whitebackgroung;
+                }
+            }
+        }
+    }
+
+    .footertitle{
+        background-color: #18293177;
+    }
+}
+
+
+
+
+
+body{
+    background-color: $mainbackground;
+    a{
+        font-size: 1.2em;
+    }
+    hr{
+        border-color: $linecolor;
+        margin-bottom: 2rem;
+    }
+    h2{
+        span{
+            color: $downloadbtn;
+        }
+    }
+    p{
+        font-size: 1.2em;
+    }
+
+    .hero{
+        width: 100%;
+        padding: 2% 8%;
+        flex-wrap: wrap;
+        nav{
+            width: 100%;
+            @include flexCenter();
+            justify-content: space-between;
+            .logo{
+                font-size: 3em;
+                margin: 1rem 0;
+            }
+            /*ul, a{
+                display: none;
+            }*/
+        }
+
+        .content{
+            margin: 2rem 0;
+            h1{
+                font-size: 3em;
+                margin: 2% 0;
+                span{
+                    color: $downloadbtn;
+                }
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+            h3{
+                margin: 2% 0;
+                font-size: 2rem;
+            }
+            p{
+                margin: 4% 0;
+            }
+
+            .newslatter{
+                margin: 2rem 0;
+                form{
+                    width: 100%;
+                    max-width: 100%;
+                    position: relative;
+        
+                    input{
+                        font-size: 1.2em;
+                        &:first-child{
+                            display: inline;
+                            width: 100%;
+                            padding: 14px 130px 14px 15px;
+                            border: 1px solid red;
+                            border-radius: 30px;
+                        }
+                        &:last-child{
+                            @include boxshadaw();
+                            position: absolute;
+                            display: inline-block;
+                            border: none;
+                            padding: 10px 30px;
+                            border-radius: 30px;
+                            background-color: $downloadbtn;
+                            top: 5px;
+                            right: 8px;
+        
+                            &:hover{
+                                cursor: pointer;
+                                transform: scale(1.05);
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+        .social{
+            position: relative;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem auto;
+            font-size: 2em;
+            a{
+                background-color: $background;
+                padding: .5rem 1rem;
+                border-radius: 50%;
+                i {
+                    &:hover{
+                        color: $downloadbtn;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+
+        .mypic{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: .5s;
+                }
+            }
+        }
+    }
+
+    #theme{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #checkbox{
+        opacity: 0;
+        position: absolute;
+    }
+
+    #checkbox:checked+ .label .ball{
+        transform: translateX(24px);
+    }
+
+    .label{
+        background-color: $background;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        padding: 5px;
+        height: 26px;
+        width: 50px;
+        /*transform: scale(1.5);*/
+        .fa-moon{
+            color: #f1c40f;
+        }
+        .fa-sun{
+            color: #f39c12;
+        }
+        .ball{
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 22px;
+            height: 22px;
+            transition: transform 0.2s linear;
+        }
+    }
+
+    .about{
+        width: 100%;
+        .mypic2{
+            width: 100%;
+            margin: 2rem auto;
+            img{
+                width: inherit;
+                margin: auto;
+            }
+            &:hover{
+                transform: scale(1.05);
+                transition: .5s;
+            }
+        }
+        .about-text{
+            width: 100%;
+            h5{
+                font-size: 2em;
+                padding: 2rem 0;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        button{
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            font-size: 18px;
+            margin: 2rem 0;
+            padding-right: 1.5rem;
+            border-radius: 30px;
+            border: 1px solid $downloadbtn;
+
+            a{
+                justify-content: center;
+                background-color: $downloadbtn;
+                padding: .5rem .7rem;
+                border-radius: 50%;
+                margin-right: .5rem;
+            }
+
+            &:hover{
+                background-color: $downloadbtn;
+                border: 1px solid $downloadbtn;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+    }
+    #services{
+        text-align: center;
+        .slogan{
+            width: 100%;
+            text-align: center;
+            h4{
+                font-size: 2em;
+                margin: 2rem 0;
+            }
+            span{
+                color: $spancolor;
+            }
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .card{
+                background-color: $background;
+                height: 400px;
+                max-width: 300px;
+                margin: 2rem 0;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                border: 1px solid $linecolor;
+                &:hover{
+                    transform: scale(1.01);
+                    transition: 0.5s;
+                    border-color: $downloadbtn;
+                }
+
+                i {
+                    font-size: 50px;
+                    display: block;
+                    text-align: center;
+                    margin: 25px 0;
+                    color: $downloadbtn;
+                }
+
+                h5{
+                    font-size: 22px;
+                    margin: 15px;
+                    text-align: center;
+                }
+
+                .note{
+                    p{
+                        font-size: 16px;
+                        line-height: 28px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        .button {
+            background-color: transparent;
+            font-size: 18px;
+            padding: .3rem 1.2rem;
+            border-radius: 30px;
+            border: 1px solid $downloadbtn;
+    
+            &:hover{
+                background-color: $downloadbtn;
+                transition: .5s;
+            }
+        }
+    }
+
+    .title{
+        h2{
+            font-size: 3em;
+            margin: 2rem 0;
+        }
+        h4{
+            font-size: 1.5em;
+        }
+    }
+    #skills{
+        width: 100%;
+        .title{
+            text-align: center;
+            h4{
+                margin-bottom:2rem ;
+            }
+        }
+        .skills-progress{
+            width: 100%;
+            margin-bottom: 45px;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+
+            .development, .design{
+                width: 100%;
+                .item{
+                    .item-text{
+                        .bar1{
+                            margin-left: 70%;
+                        }
+                    }
+                    .progress{
+                        width: 100%;
+                        height: 8px;
+                        margin: .8rem 0;
+                        border-radius: 10px;
+                        background-color: $background;
+                        overflow: hidden;
+                        .progress-bar{
+                            width: 100%;
+                            height: 100%;
+                            background-color: $downloadbtn;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar1{
+                            margin-left: 70%;
+                        }
+                    }
+                    .progress{
+                        .bar1{
+                            width: 80%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar2{
+                            margin-left: 50%;
+                        }
+                    }
+                    .progress{
+                        .bar2{
+                            width: 60%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar3{
+                            margin-left: 20%;
+                        }
+                    }
+                    .progress{
+                        .bar3{
+                            width: 20%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar4{
+                            margin-left: 5%;
+                        }
+                    }
+                    .progress{
+                        .bar4{
+                            width: 10%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar5{
+                            margin-left: 1%;
+                        }
+                    }
+                    .progress{
+                        .bar5{
+                            width: 20%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar6{
+                            margin-left: 5%;
+                        }
+                    }
+                    .progress{
+                        .bar6{
+                            width: 30%;
+                        }
+                    }
+                }
+                .item{
+                    .item-text{
+                        .bar7{
+                            margin-left: 1%;
+                        }
+                    }
+                    .progress{
+                        .bar7{
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .experience{
+        width: 100%;
+        
+        .box{
+            @include flexCenter();
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            .card{
+                text-align: center;
+                background-color: $background;
+                width: 250px;
+                padding: 1rem;
+                margin: 1rem auto;
+                border-radius: 10px;
+                border: 1px solid $linecolor;
+                h2{
+                    font-size: 4em;
+                    color: $spancolor;
+                }
+                h4{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .getintouch{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        h2{
+            font-size: 3em;
+            margin-top: 1rem;
+            span{
+                color: $spancolor;
+            }
+        }
+        h4{
+            font-size: 1.2em;
+            margin: 1rem 0;
+        }
+    }
+    .contact{
+        .title{
+            .details{
+                form{
+                    display: block;
+                    width: 100%;
+                    margin: auto;
+
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            margin-bottom: 1rem;
+                            
+                            color: $linecolor;
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        font-size: 18px;
+                        margin-bottom: 1rem;
+                        padding: .5rem;
+                        border: none;
+                        background: transparent;
+                        border-bottom: 1px solid $linecolor;
+                    }
+    
+                    textarea{
+                        background-color: transparent;
+                        border: 1px solid $linecolor;
+                        border-radius: 10px;
+                        width: 100%;
+                        padding: 1rem;
+                        resize: none;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .sub-button{
+                width: 18vh;
+                margin: auto;
+                margin-bottom: 45px;
+                margin-top: 20px;
+    
+                .message-sub{
+                    position: relative;
+                    border: 1px solid $linecolor;
+                    font-size: 20px;
+                    background-color: transparent;
+                    padding: .5rem 2rem;
+                    margin: auto;
+                    border-radius: 10px;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background-color: $downloadbtn;
+                        transition: .5s;
+                        border-color: $downloadbtn;
+                    }
+                }
+            }
+        }
+        .info{
+            .detailsinfo{
+                width: 100%;
+                justify-content: space-between;
+                padding: 0;
+                ul {
+                    /*@include flexCenter();*/
+                    flex-wrap: wrap;
+                    li{
+                        width: 100%;
+                        background-color: #18293177;
+                        padding: 1.5rem; 
+                        margin: 1rem 0;
+                        text-align: center;
+                        border-radius: 10px;
+                        &:hover{
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .footertitle{
+        width: 100%;
+        background-color: $footercolor;
+        text-align: center;
+        padding: 10px;
+        h2{
+            font-size: 3em;
+            span{
+                color: $spancolor;
+            }
+        }
+        p{
+            font-size: 1.2em;
+        }
+
+        #social{
+            width: 25%;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 2em;
+            a{
+                background-color: $background;
+                padding: .5rem 1rem;
+                border-radius: 50%;
+                i {
+                    &:hover{
+                        color: $downloadbtn;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+    #hero{
+        display: flex;
+        flex-wrap: wrap;
+        .container{
+           border-radius: 10px;
+           width: 100%; 
+            .owner{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: inherit;
+                /*max-width: 500px;*/
+                margin: auto;
+                .names{
+                    width: 100%;
+                    text-align: center;
+                    .image{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        margin: 2rem auto;
+                        background-color: #000;
+                    }
+                    h3{
+                        font-size: 2.2em;
+                        span{
+                            color: $spancolor;
+                        }
+                    }
+                }
+
+                .somebuttons{
+                    ul{
+                        margin-bottom: 2rem;
+                        li{
+                            padding: .5rem 0;
+                            margin: 0 .5rem;
+                            border-bottom: 1px solid $linecolor;
+                            &:hover{
+                                border-color: $white;
+                                transition: .5s;
+                            }
+                            a{
+                                color: $linecolor;
+                                padding: 2rem 0;
+                                &:hover{
+                                    color: $white;
+                                    transition: .5s;
+                                }
+                            }
+                        }
+                    }
+                }
+                .hallmark{
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        font-size: 1.2em;
+                        font-style: italic;
+                        margin: 1.5rem auto;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+        .maincontainer{
+            .title2{
+                h2{
+                    font-size: 3em;
+                }
+                p{
+                    font-size: 1.2em;
+                    margin: 2rem 0;
+                }
+            }
+        }
+        .box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .card{
+                width: 350px;
+                max-width: 350px;
+                min-width: 200px;
+                height: 100%;
+                background-color: $background;
+                margin: 1rem auto;
+                border-radius: 10px;
+                border: 1px solid $linecolor;
+                .images{
+                    width: 100%;
+                    height: 150px;
+                    img{
+                        width: inherit;
+                        height: inherit;
+                        border-radius: 20px 20px 0 0;
+                    }
+                    
+                }
+                h5{
+                    color: $linecolor;
+                    margin: 1rem;
+                    font-size: 1.5em;
+                }
+                h4{
+                    margin: 1rem;
+                    font-size: 1.5em;
+                }
+                p{
+                    margin: 1rem;
+                    font-size: 1.1em;
+                }
+                &:hover{
+                    transform: scale(1.02);
+                    transition: .5s;
+                    
+                }
+                .buttonmore{
+                    text-align: end;
+                    margin: 5%;
+                    button{
+                        background: transparent;
+                        border: 1px solid red;
+                        padding: .2rem .5rem;
+                        border-radius: 10px;
+                        font-size: 1.2em;
+                        &:hover{
+                            background-color: $downloadbtn;
+                            transition: .5s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1300px) {
+    .hero{
+        nav{
+            ul, a{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hero{
+        .content{
+            width: 700px;
+            margin-top: auto;
+            .newslatter{
+                form{
+                    width: 100%;
+                }
+            }
+        }
+        .social{
+            width: 20vw;
+            max-width: 40vw;
+        }
+
+        .mypic{
+            width: 700px;
+            margin: auto;
+            img{
+                width: 700px;
+            }
+        }
+        #skills{
+            .skills-progress{
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                .development, .design{
+                    width: 45%;
+                }
+            }
+        }
+    }
+    #hero{
+        .container{
+            width: 100%;
+            padding: 0;
+            margin-bottom:2rem ;
+            .owner{
+                width: inherit;
+                justify-content: space-between;
+                .somebuttons{
+                    
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            padding: 1rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*.contact{
+        width: 100%;
+        display: flex;
+        .title{
+            width: 45%;
+        }
+        .info{
+            width: 50%;
+        }
+    }*/
+    
+}
+
+@media only screen and (min-width:1200px) {
+    body{
+        .hero{
+            
+            hr {
+                width: 100%;
+                margin: 0 auto;
+                border-color: $linecolor;
+            }
+            .logo{
+                font-size: 2em;
+                cursor: pointer;
+        
+                span{
+                    color: $spancolor;
+                }
+            }
+    
+            nav{
+                @include flexCenter();
+                align-items: center;
+                justify-content: space-between;
+                margin: 0;
+                ul{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 65%;
+                    max-width: 800px;
+                    li{
+                        padding: .5rem 1rem;
+                        border: 1px solid transparent;
+                        a{
+                            font-size: 1.2rem;
+                        }
+                        &:hover{
+                            a{
+                                color: $spancolor;
+                            }
+                            border-bottom: 1px solid $downloadbtn;
+                            transition: .5s;
+                        }
+                    }
+                }
+                .subscribe{
+                    a{
+                        background-color: $downloadbtn;
+                        padding: .5rem 1.5rem;
+                        border-radius: 30px;
+                       
+                    }
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: .5s;
+                    }
+                }
+            }
+            .content{
+                width: 50%;
+                h4{
+                    font-size: 1.5rem;
+                }
+
+                h1{
+                    font-size: 3rem;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 2.3rem;
+                }
+            }
+
+            .social{
+                position: absolute;
+                width: 25vw;
+                display: flex;
+                justify-content: space-between;
+                left: 20%;
+                font-size: 2em;
+                bottom: 10%;
+                a{
+                    background-color: $background;
+                    padding: .5rem 1rem;
+                    border-radius: 50%;
+                    i {
+                        &:hover{
+                            color: $downloadbtn;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .mypic{
+                position: absolute;
+                display: flex;
+                border-radius: 10px;
+                width: 40%;
+                max-width: 550px;
+                height: 70%;
+                right: 10%;
+                top: 55%;
+                transform: translateY(-50%);
+                background-color: $mainbackground;
+        
+                img {
+                    position: relative;
+                    width: 100%;
+                    max-width: 95%;
+                    min-width: 90%;
+                    height: 95%;
+                    margin: auto;
+                }
+            }
+            .shape {
+                height: 85%;
+                width: 40%;
+                position: absolute;
+                right: 0px;
+                bottom: 0;
+                background-color: red;
+                clip-path: polygon(61% 0, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+            }
+            .shape2{
+                background: $downloadbtn;
+                display: block;
+                width: 39%;
+                height: 85%;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                bottom: 0;
+                clip-path: polygon(45% 0, 0 0, 0 52%, 0 100%, 100% 100%);
+            }
+        }
+        #about{
+            .main{
+                width: 50%;
+                max-width: 95%;
+                display: flex;
+                justify-content: space-around;
+                .about-text{
+                    width: 40%;
+                    position: absolute;
+                    left: 55%;
+                    top: 20%;
+                    h2{
+                        font-size: 3rem;
+                        margin: 0;
+                        span{
+                            color: $downloadbtn;
+                        }
+                    }
+                    h5{
+                        letter-spacing: 2px;
+                        font-size: 2em;
+                        margin-bottom: 10px;
+        
+                        span{
+                            color: $downloadbtn;
+                        }
+                    }
+        
+                    p{
+                        line-height: 2em;
+                        font-size: 1.2em;
+                        margin-bottom: 50px;
+                    }
+                }
+                .mypic2{
+                    position: absolute;
+                    display: flex;
+                    width: 30%;
+                    max-width: 500px;
+                    height: 70%;
+                    left: 10%;
+                    top: 20%;
+                    border-radius: 10px;
+                    /*transform: translateY(-50%);*/
+                    background-color: $mainbackground;
+            
+                    img {
+                        position: relative;
+                        width: 500px;
+                        height: 95%;
+                        left: 3%;
+                        margin: auto;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        #services{
+            width: 100%;
+            padding: 0;
+            .box{
+                @include flexCenter();
+                min-width: 100%;
+                flex-wrap: wrap;
+                .card{
+                    padding: 1rem 1.5rem;
+                    height: 400px;
+                    width: 300px;
+                    background-color: $background;
+                    border: 1px solid $linecolor;
+                    margin: 15px;
+                    position: relative;
+                    border-radius: 10px;
+    
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.5s;
+                        border-color: $downloadbtn;
+                    }
+    
+                    i {
+                        font-size: 50px;
+                        display: block;
+                        text-align: center;
+                        margin: 25px 0;
+                        color: $downloadbtn;
+                    }
+    
+                    h5{
+                        font-size: 22px;
+                        margin: 15px;
+                        text-align: center;
+                    }
+    
+                    .note{
+                        p{
+                            font-size: 16px;
+                            line-height: 28px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        #hero{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .container{
+                margin-top: 2rem;
+                /*width: 400px;
+                height: inherit;
+                display: flex;
+                margin: 2% 2% 2% 8% ;
+                border-radius: 20px;
+                padding: 2%;
+                .owner{
+                    .names{
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 2rem;
+                        text-align: center;
+                        span{
+                            color: $downloadbtn;
+                        }
+                        .image{
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 50%;
+                            background-color: red;
+                            margin: auto;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }*/
+        
+                .somebuttons{
+                    ul{
+        
+                        li{
+                            margin: 1rem 0;
+                            a{
+                                padding: .2rem 0;
+                                color: #426c81;
+                                &:hover{
+                                    color: $mainbackgroundlight;
+                                    transition: .5s;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .hallmark{
+                    margin-top: 5rem;
+                    border-radius: 20px;
+                    p{
+                        font-style: italic;
+                    }
+                }
+            }
+    
+            .maincontainer{
+                width: 100%;
+                overflow: hidden;
+                margin: auto;
+                padding: 2%;
+                border-radius: 20px;
+                text-align: start;
+                .title2{
+                    h2{
+                        /*font-size: 2em;*/
+                        margin-bottom: 1rem;
+                    }
+                    span{
+                        color: $downloadbtn;
+                    }
+                }
+                .box{
+                    width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .card{
+                        width: 32%;
+                        max-width: 400px;
+                        margin-top: 2%;
+                        margin: 2rem auto ;
+                        height: 100%;
+                        border-radius: 20px;
+                        background-color: $background;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+        .contact{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            .title, .info{
+                text-align: center;
+                width: 48%;
+                .detailsinfo{
+                    ul{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        padding-top: 1rem;
+                        li{
+                            width: 50%;
+                            margin: 1rem;
+                        }
+                    }
+                }
+            }
+            #myinfo{
+                width: 100%;
+                h2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/*@media only screen and (min-width:1340px) {
+    body{
+        .hero{
+            nav{
+                ul{
+                    width: 59%;
+                }
+            }
+        }
+    }
+}*/
+@media only screen and (min-width:1580px) {
+    #services{
+        .box{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 10%;
+        }
+    }    
+}
+

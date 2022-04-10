@@ -1,0 +1,206 @@
+
+
+/*@media only screen and (min-width: 1000px) {
+    body {
+        background-color: $mainbackground;
+        transition: background 0.2s linear;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        max-width: 1920px;
+        .hero{
+            height: 90vh;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    
+        
+    
+        
+        #theme{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        #checkbox{
+            opacity: 0;
+            position: absolute;
+        }
+    
+        #checkbox:checked+ .label .ball{
+            transform: translateX(24px);
+        }
+    
+        .label{
+            background-color: $background;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 50px;
+            padding: 5px;
+            height: 26px;
+            width: 50px;
+            /*transform: scale(1.5);
+            .fa-moon{
+                color: #f1c40f;
+            }
+            .fa-sun{
+                color: #f39c12;
+            }
+            .ball{
+                background: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 22px;
+                height: 22px;
+                transition: transform 0.2s linear;
+            }
+        }
+    
+        nav {
+            
+    
+            
+        }
+    
+        .content{
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translateY(-50%);
+        }
+        
+    
+        
+        
+    
+        .somenote{
+            width: 80%;
+            padding-bottom: 2rem;
+        
+        }
+        h1{
+            margin: 2% 0 2%;
+            font-size: 3em;
+            span {
+                color: $spancolor;
+            }
+        }
+    
+        h3{
+            font-size: 1.5em;
+            margin-bottom: 3%;
+        }
+        h4{
+            letter-spacing: 2px;
+            font-size: 1.1em;
+        }
+    
+        .newslatter{
+            form{
+                width: 50%;
+                max-width: 100%;
+                position: relative;
+    
+                input{
+                    &:first-child{
+                        display: inline;
+                        width: 100%;
+                        padding: 14px 130px 14px 15px;
+                        border: 1px solid red;
+                        border-radius: 30px;
+                    }
+                    &:last-child{
+                        @include boxshadaw();
+                        position: absolute;
+                        display: inline-block;
+                        border: none;
+                        padding: 10px 30px;
+                        border-radius: 30px;
+                        background-color: $downloadbtn;
+                        top: 5px;
+                        right: 8px;
+    
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.05);
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    
+        
+    
+        #about{
+            width: 100%;
+            padding:  auto;
+        }
+    
+        
+        .title {
+            text-align: center;
+            h2{
+                font-size: 2.5rem;
+                width: 100%;
+                margin: 2rem auto;
+                text-align: center;
+            }
+            span{
+                color:$downloadbtn;
+            }
+            h4{
+                margin: 1rem;
+            }
+    
+        }
+        
+        
+    
+        
+    
+        
+    
+        
+        .contact{
+            width: 100%;
+            padding: 0 8%;
+            @include flexCenter();
+            justify-content: space-between;
+            
+            .title{
+                width: 45%;
+                .details{
+                
+                    
+                }
+                
+            }
+    
+            .info{
+                width: 50%;
+                .title{
+                    margin: auto;
+                }
+                
+            }
+        }
+    
+        
+    
+        
+    }
+}*/
+/*body.light{
+    
+
+    
+
+    
+}
